@@ -9,12 +9,12 @@ import studentpackage.student_portal_management19.Repostiory.StudentRepository;
 
 import java.util.Optional;
 
-@Service//=>data management
+@Service
 public class Studentserviceimpl implements StudentService{
-    @Autowired// obj
+    @Autowired
     private StudentRepository callthequery;
 
-    @Override//=> hidden
+    @Override
     public StudentEntity Studentregisterlogic(StudentDto front){
         StudentEntity storedata=new StudentEntity(front.getReg(),
                 front.getName(),
@@ -28,7 +28,7 @@ public class Studentserviceimpl implements StudentService{
     @Override
     public boolean  Studentloginlogic(Long reg,String password){
         Optional<StudentEntity> check =callthequery.findByRegAndPassword(reg, password);
-        return check.isPresent();//true
+        return check.isPresent();
 
     }
 
