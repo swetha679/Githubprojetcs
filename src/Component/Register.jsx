@@ -3,7 +3,7 @@ import img from './img/student.jpg'
 import axios from "axios";
 import { Link, useNavigate } from 'react-router-dom';
 function Register(){
-    const[reg,setreg]=useState("");//=>value,update=>setreg
+    const[reg,setreg]=useState("");
 
     const[name,setname]=useState("");
     const[password,setpassword]=useState("");
@@ -18,11 +18,11 @@ const registerhandling=async()=>{
         const response= await axios.post("http://localhost:8080/Register",register);
         console.log(response.data);
         if(response.data){
-            alert("register successfull");//200
+            alert("register successfull");
             navigate("/")
         }
     } catch (error) {
-        alert("backend is not connected");//back ,path , data type
+        alert("backend is not connected");
     }
 }
     return(
@@ -45,7 +45,7 @@ const registerhandling=async()=>{
         </div>
     )
 }
-export default Register;// extend
+export default Register;
 
 
 // private String reg;
