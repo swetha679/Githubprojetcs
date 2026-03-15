@@ -15,7 +15,7 @@ public class MarkEntity {
     private String subjectcode;
     private String mark;
     private String grade;
-    private String result;//=> constructor, get and set, default constructor
+    private String result;
 
     public MarkEntity() {
     }

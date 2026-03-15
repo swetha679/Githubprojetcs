@@ -4,15 +4,15 @@ import Footer from './Footer';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 function Home(){
-    const reg= sessionStorage.getItem('reg');//=>login collect the home
-    const [display ,setdisplay]=useState([]);//=> collect
+    const reg= sessionStorage.getItem('reg');
+    const [display ,setdisplay]=useState([]);
     const [namereg,setnamereg]=useState("");
     useEffect(()=>{
 const regs= reg;
 if(regs){
     displayapi(regs)
 }else{
-    alert("error");// message the send
+    alert("error");
 }
     },[reg])
     const displayapi=async(regs)=>{
@@ -72,10 +72,3 @@ if(regs){
     )
 }
 export default Home;
-//  private Long reg;
-//     private String name;
-//     private String subject;
-//     private String subjectcode;
-//     private int mark;
-//     private String grade;
-//     private String result;

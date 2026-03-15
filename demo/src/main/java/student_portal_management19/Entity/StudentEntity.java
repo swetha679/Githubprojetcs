@@ -1,9 +1,14 @@
 package demo.src.main.java.student_portal_management19.Entity;
 
+<<<<<<< HEAD:demo/src/main/java/student_portal_management19/Entity/StudentEntity.java
+=======
+import jakarta.persistence.*;
+
+>>>>>>> e7447961a9046d843ba6fb9f8aef00e8a21c23f9:src/student_portal_management19/Entity/StudentEntity.java
 @Entity
 @Table(name = "Student_register")
 public class StudentEntity {
-    @Id//=>unquie
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long reg;

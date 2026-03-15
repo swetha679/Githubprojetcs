@@ -7,7 +7,7 @@ import java.util.List;
 public class MarkServiceimpl implements MarkService{
     @Autowired
     private MarkRepository callthequery;
-    //=>store and controller => postman//task 1 and jdbc ==1//1 Monday
+   
     @Override
     public MarkEntity Addmarklogic(MarkDto markDto){
         MarkEntity storethedata= new MarkEntity(markDto.getReg(),

@@ -22,7 +22,7 @@ public class Studentserviceimpl implements StudentService{
     @Override
     public boolean  Studentloginlogic(Long reg,String password){
         Optional<StudentEntity> check =callthequery.findByRegAndPassword(reg, password);
-        return check.isPresent();//true
+        return check.isPresent();
 
     }
 
