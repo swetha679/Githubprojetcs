@@ -1,0 +1,75 @@
+package studentpackage.student_portal_management19.Entity;
+
+import jakarta.persistence.*;
+
+@Entity// table => create
+@Table(name = "Student_register")//create table name
+public class StudentEntity {
+    @Id//=>unquie
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private Long reg;
+    private String name;
+    private String password;
+    private int year;
+    private String clg;
+//=> obj method one default object
+    public StudentEntity(){
+
+    }
+    public StudentEntity(Long reg, String name, String password, int year, String clg) {
+        this.reg = reg;
+        this.name = name;
+        this.password = password;
+        this.year = year;
+        this.clg = clg;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getReg() {
+        return reg;
+    }
+
+    public void setReg(Long reg) {
+        this.reg = reg;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public String getClg() {
+        return clg;
+    }
+
+    public void setClg(String clg) {
+        this.clg = clg;
+    }
+}
