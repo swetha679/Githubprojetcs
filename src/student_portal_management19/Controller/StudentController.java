@@ -11,7 +11,7 @@ import studentpackage.student_portal_management19.DTO.StudentDto;
 import studentpackage.student_portal_management19.Entity.StudentEntity;
 import studentpackage.student_portal_management19.Service.StudentService;
 @CrossOrigin
-@RestController//=>align
+@RestController
 public class StudentController {
     @Autowired
     private StudentService callthemethod;
